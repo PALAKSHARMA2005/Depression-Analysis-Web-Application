@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Depression Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen">
+            <h1>Welcome to the Depression Analysis</h1>
+            <button id="start-button" class="button">Start</button>
+        </div>
+        <!-- Questionnaire Screen -->
+        <div id="questionnaire-screen" class="screen hidden">
+            <h2 id="question-text"></h2>
+            <div id="options-container"></div>
+            <button id="previous-button" class="button">Previous</button>
+            <button id="next-button" class="button">Next</button>
+        </div>
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen hidden">
+            <h2>Your PHQ-9 Score: <span id="score"></span></h2>
+            <p id="message"></p>
+            <h3>Suggestions:</h3>
+            <ul id="suggestions"></ul>
+            <button id="save-button" class="button">Save my check-in</button>
+            <button id="exercise-button" class="button">Try a calming exercise</button>
+        </div>
+        <!-- Calming Exercise Screen -->
+        <div id="calming-exercise-screen" class="screen hidden">
+            <h1>Calming Exercise</h1>
+            <p>Take a deep breath in... and out. Repeat this for 5 minutes.</p>
+            <div class="quotes">
+                <p>Please remember that you’re capable, brave and loved – even when it feels like you’re not.</p>
+                <p>Do not give the past the power to define your future.</p>
+                <p>Perhaps you’ve been assigned this mountain to show others that it can be moved.</p>
+                <p>Just a reminder: it is NOT selfish to put your recovery first. Rather, it’s necessary in order to make sure that everything else doesn’t come last.</p>
+                <p>Small, baby steps each day add up to huge, giant leaps over time. So, please keep going. Do NOT give up.</p>
+                <p>You are not worthless, you are not a failure, and you are not a loser. That voice saying you are is just your depression trying to trick you.</p>
+                <p>On those really difficult days when it seems impossible to go on and you feel like giving up, just remind yourself that you’ve been there before and you’ve survived every time, so you can survive this time, too.</p>
+                <p>Even the darkest hour only has 60 minutes.</p>
+            </div>
+            <h2>Mental Health Helpline</h2>
+            <p>For mental health support and specifically for those struggling with depression in India, you can dial the 24/7 toll-free mental health rehabilitation helpline KIRAN at 1800-599-0019.</p>
+            <ul>
+                <li><strong>Number:</strong> 1800-599-0019</li>
+                <li><strong>Language:</strong> Available in 13 languages</li>
+                <li><strong>Purpose:</strong> Provides relief and support to individuals with mental illness.</li>
+                <li><strong>Launched by:</strong> Department of Empowerment of Persons with Disabilities (DEPwD), Ministry of Social Justice and Empowerment.</li>
+            </ul>
+            <h2>Additional Mental Health Resources</h2>
+            <ul>
+                <li><strong>988 Suicide & Crisis Lifeline:</strong> If you are suicidal or in emotional distress, call or text 988 or start a chat online to connect with a trained crisis counselor.</li>
+                <li><strong>Emergency Response Support System (ERSS):</strong> For emergencies, dial 112.</li>
+            </ul>
+            <button id="return-home-button" class="button">Return to Main Page</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
